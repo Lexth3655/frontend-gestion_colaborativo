@@ -14,10 +14,7 @@
           </ul>
         </li>
 
-        <!-- Menú de Colaboración -->
-        <li class="navbar-item">
-          <router-link to="/collaboration" class="navbar-link">Colaboración</router-link>
-        </li>
+      
 
         <!-- Menú de Configuración con submenú -->
         <li class="navbar-item">
@@ -44,7 +41,7 @@
 </template>
 
 <style scoped>
-/* Mantener los mismos estilos futuristas */
+
 #app {
   font-family: 'Orbitron', sans-serif;
   color: #fff;

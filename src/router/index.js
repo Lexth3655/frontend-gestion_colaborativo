@@ -7,7 +7,7 @@ import UserManagement from '../views/UserManagement.vue';
 import RoleManagement from '../views/RoleManagement.vue';
 import Resources from '../views/ResourceManagement.vue';
 import Reports from '../views/ReportOverview.vue';
-import BlankLayout from '../layouts/BlankLayout.vue'; // Nuevo layout en blanco
+import BlankLayout from '../layouts/BlankLayout.vue'; // Nuevo layout ya vere que pongo
 import CreateUser from '../views/CreateUser.vue';
 import EditUser from '../views/EditUser.vue';
 import UserProfile from '../views/UserProfile.vue';
@@ -15,7 +15,7 @@ import UserProfile from '../views/UserProfile.vue';
 const routes = [
   { path: '/', name: 'home', component: HomeView },
 
-  // Módulo de Proyectos con submenú
+  // Modulo de Proyectos con submenu, fron
   {
     path: '/projects',
     name: 'Projects',
@@ -27,22 +27,22 @@ const routes = [
     ]
   },
 
-  // Configuración con submenú para Usuarios y Roles
+  // Configuracion con submenu para Usuarios y Roles
   {
     path: '/settings',
     name: 'Settings',
-    component: BlankLayout, // Usa el nuevo layout vacío
+    component: BlankLayout, // Usa el nuevo layout vacio
     children: [
       { path: 'users', name: 'UserManagement', component: UserManagement },
       { path: 'roles', name: 'RoleManagement', component: RoleManagement },
     ]
   },
 
-  // Rutas para Usuarios (CRUD)
+  // Rutas para Usuarios (CRUD, para implementar api)
   {
     path: '/users',
     name: 'UserSection',
-    component: BlankLayout, // Layout en blanco para la sección de usuarios
+    component: BlankLayout, // Layout en blanco para la sección de usuarios, aun no me aparece nada :ccc
     children: [
       { path: '', name: 'UserManagement', component: UserManagement }, // Lista de usuarios
       { path: 'create', name: 'CreateUser', component: CreateUser },    // Crear usuario
@@ -55,7 +55,7 @@ const routes = [
   { path: '/resources', name: 'Resources', component: Resources },
   { path: '/reports', name: 'Reports', component: Reports },
 
-  // Acerca de
+  // Acerca de eso de ultimo 
   {
     path: '/about',
     name: 'about',
