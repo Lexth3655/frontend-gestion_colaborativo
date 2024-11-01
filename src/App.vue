@@ -14,7 +14,7 @@
           </ul>
         </li>
 
-      
+
 
         <!-- Menú de Configuración con submenú -->
         <li class="navbar-item">
@@ -41,7 +41,7 @@
 </template>
 
 <style scoped>
-
+/* Mantener los mismos estilos futuristas */
 #app {
   font-family: 'Orbitron', sans-serif;
   color: #fff;
