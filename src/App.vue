@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- Navbar Futurista -->
+  <!-- Navbar Futurista -->
     <nav class="navbar">
       <div class="navbar-brand">Gestión Colaborativa</div>
       <ul class="navbar-menu">
@@ -38,9 +38,29 @@
     </nav>
     <router-view />
   </div>
+  <div class="app-container">
+    <Login />
+  </div>
 </template>
 
+<script>
+import Login from "/components/login.vue"; // importanto login
+
+export default {
+  components: {
+    Login,
+  },
+};
+</script>
+
 <style scoped>
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
 /* Mantener los mismos estilos futuristas */
 #app {
   font-family: 'Orbitron', sans-serif;
