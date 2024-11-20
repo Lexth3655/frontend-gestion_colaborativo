@@ -28,15 +28,15 @@
   </template>
   
   <script>
-  import commentsService from "@/services/commentsService";
+  import commentsService from "/services/commentsService";
   
   export default {
     data() {
       return {
         comments: [], // Lista de comentarios
         newComment: "", // Nuevo comentario
-        tareaId: 1, // ID de la tarea (puedes ajustarlo según el contexto)
-        usuarioId: 2, // ID del usuario (puedes obtenerlo de la sesión o estado global)
+        tareaId: 1, // ID de la tarea 
+        usuarioId: 2, // ID del usuario 
       };
     },
     methods: {
