@@ -1,18 +1,18 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api/Comentarios";
+//const API_BASE_URL = "http://localhost:5000/api/Comentarios";
 
 export default {
   // Obtener comentarios por tarea
   getCommentsByTask(tareaId) {
-    return axios.get(`${API_BASE_URL}/ObtenerComentariosPorTarea`, {
+    return axios.get('${API_BASE_URL}/ObtenerComentariosPorTarea', {
       params: { tareaId },
     });
   },
   // Agregar un comentario a una tarea
   addCommentToTask(tareaId, usuarioId, contenido) {
     return axios.post(
-      `${API_BASE_URL}/AgregarComentarioATarea`,
+      '${API_BASE_URL}/AgregarComentarioATarea',
       contenido,
       {
         params: { tareaId, usuarioId },
@@ -22,14 +22,14 @@ export default {
   },
   // Actualizar un comentario
   updateComment(id, nuevoContenido) {
-    return axios.put(`${API_BASE_URL}/ActualizarComentario`, nuevoContenido, {
+    return axios.put('${API_BASE_URL}/ActualizarComentario', nuevoContenido, {
       params: { id },
       headers: { "Content-Type": "application/json" },
     });
   },
-  // Eliminar un comentario
+  //Eliminar un comentario
   deleteComment(id) {
-    return axios.delete(`${API_BASE_URL}/EliminarComentario`, {
+    return axios.delete('${API_BASE_URL}/EliminarComentario', {
       params: { id },
     });
   },
